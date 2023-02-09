@@ -1,0 +1,14 @@
+<div class=' sticky top-0 bg-white   flex flex-col '>
+    <div class='flex flex-row text-lg justify-between '>
+      <p class='m-2 text-lg font-bold'>Inicio</p>
+     
+    </div>
+    <div class='mt-4 text-sm flex justify-evenly'>
+        <div (click)="setSelect(0)" class="cursor-pointer p-2" [ngClass]="{'border-b-4 border-blue-500 font-semibold':select}">
+          <p>Para ti</p>
+        </div>
+        <div (click)="setSelect(1)" class="cursor-pointer p-2" [ngClass]="{'border-b-4 border-blue-500 font-semibold':!select}">
+          <p>Siguiendo</p>
+        </div>
+    </div>
+</div>

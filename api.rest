@@ -1,0 +1,19 @@
+###
+POST http://localhost:3000/users/register 
+Content-Type: application/json
+
+{
+ "name": "luis", "email":"lapcpc2@hotmail.com","password": "changeme"
+}
+
+###
+POST http://localhost:3000/users/login 
+Content-Type: application/json
+
+{
+    "email":"lapcpc2@hotmail.com","password": "changeme"
+}
+
+###
+GET http://localhost:3000/users/user 
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImxhcGNwYzJAaG90bWFpbC5jb20iLCJpYXQiOjE2NzU4MDEzMjB9._qSX9b9FUrWLzq_UWG2cz8xPdqdCClc6A9wr4fOiyqE

@@ -1,0 +1,16 @@
+<div class='h-screen w-screen  bg-gray-300/25  absolute z-50'>
+    <div class=' px-28 pb-24 w-fit mx-auto my-[8%] rounded-xl bg-white shadow-2xl p-5'>
+        <div class='w-5/6 mx-auto flex flex-col items-center space-y-6'>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+            class='w-7 h-7' />
+            <h1 class=' text-3xl font-semibold'>Inicia sesión en Twitter</h1>
+            <input [(ngModel)]="user.name" type="text" name="name"  placeholder="Nombre" class='rounded-md focus:border-2 outline-none focus:border-blue-500 w-full p-2' />
+            <input [(ngModel)]="user.email" class='rounded-md focus:border-2 outline-none focus:border-blue-500 w-full p-2'  type="text" placeholder='Corre electronico'/>
+            <input [(ngModel)]="user.password" class='rounded-md focus:border-2 outline-none focus:border-blue-500 w-full p-2' type="text" placeholder='Contraseña'/>
+            <button  (click)="registrar()" class='w-full text-white font-semibold bg-black rounded-full p-1'>Siguiente</button>
+            <div class='flex'>
+              <p>¿No tienes cuenta?</p> <a (click)="goLogin()" class='text-blue-500 cursor-pointer'>Registrate</a>
+            </div>
+          </div>
+    </div>
+</div>

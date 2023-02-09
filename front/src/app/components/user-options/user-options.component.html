@@ -1,0 +1,19 @@
+<div (click)="change()" class='flex cursor-pointer space-x-10 hover:bg-gray-200 rounded-full xl:p-3 w-full'>
+  
+        <div class='flex space-x-2 w-full'>
+            <img class=' object-contain w-10 h-10  rounded-full' src="https://cdn-icons-png.flaticon.com/512/8847/8847523.png" />
+            <div class='hidden  xl:flex flex-col  text-sm'>
+                <p>
+                    <b> {{name}} </b>
+                </p>
+                <p>@user</p>
+            </div>
+            
+            </div>
+            <ng-icon name="heroEllipsisHorizontal" class='hidden xl:inline w-6 h-6 mt-2'/>
+            
+  
+</div>
+<div (click)="logout()" class=" top-[83%] cursor-pointer  px-4 absolute p-2 rounded-md bg-white shadow-md shadow-slate-500/25 " [ngClass]="{'hidden': active}">
+    Log out
+</div>

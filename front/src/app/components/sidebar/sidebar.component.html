@@ -1,0 +1,62 @@
+<div class='sticky top-0  w-full pt-1  justify-between flex flex-col h-screen items-end'>
+    <div class=' space-y-3  '>
+      <div class='p-2 xl:ml-1 hover:bg-sky-100 rounded-full  w-fit'>
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+      class='w-7 h-7' />
+      </div>
+  
+    <div>
+        <app-sidebar-row>
+            <ng-icon name="heroHome"></ng-icon>
+            <p title>Inicio</p>
+          </app-sidebar-row>
+    </div>
+   <div>
+    <app-sidebar-row>
+        <ng-icon name="heroHashtag"></ng-icon>
+        <p title>Explorar</p>
+      </app-sidebar-row>
+   </div>
+    <div>
+        <app-sidebar-row>
+            <ng-icon name="heroBell"></ng-icon>
+            <p title>Notificaciones</p>
+          </app-sidebar-row>
+    </div>
+  <div>
+    <app-sidebar-row>
+        <ng-icon name="heroEnvelope"></ng-icon>
+        <p title>Mensajes</p>
+      </app-sidebar-row>
+  </div>
+   <div>
+    <app-sidebar-row>
+        <ng-icon name="heroBookmark"></ng-icon>
+        <p title>Guardados</p>
+      </app-sidebar-row>
+   </div>
+  <div>
+    <app-sidebar-row>
+        <ng-icon name="heroClipboardDocument"></ng-icon>
+        <p title>Listas</p>
+      </app-sidebar-row>
+  </div>
+   <div>
+    <app-sidebar-row>
+        <ng-icon name="heroUser"></ng-icon>
+        <p title>Perfil</p>
+      </app-sidebar-row>
+   </div>
+    <div>
+        <app-sidebar-row>
+            <ng-icon name="heroEllipsisHorizontalCircle"></ng-icon>
+            <p title>Mas opciones</p>
+          </app-sidebar-row>
+    </div>
+      <button class='text-center    bg-sky-500 hover:bg-sky-600 rounded-full text-white p-1 px-3 xl:py-3 font-medium text-lg w-fit xl:w-full'> <p class='hidden xl:inline'>Twittear</p> <p class='inline xl:hidden p-0'>+</p> </button>
+      
+    </div>
+    <div class=' pb-5 '>
+      <app-user-options [name]="name"></app-user-options>
+    </div>
+  </div>
