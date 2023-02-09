@@ -9,7 +9,7 @@ import { join } from 'path';
   imports: [UsersModule,
     MongooseModule.forRoot('mongodb+srv://luispinot99:Hola1234@cluster0.asrtxol.mongodb.net/twitter'),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'client/front/angular-tour-of-heroes/dist/angular-tour-of-heroes'),
+      rootPath: join(__dirname, '../../', 'front/dist/front'),
       exclude: ['/api*'],
     }),
   ],
